@@ -1,0 +1,26 @@
+.bg-main {
+  background-color: #24126a;
+}
+.text-main {
+  color: #24126a;
+}
+.page-wrapper {
+  height: 100vh;
+  box-sizing: border-box;
+}
+.content {
+  height: 93vh;
+}
+footer {
+  height: 7vh;
+}
+.test {
+  background-image: url(../img/laptop.png),
+    radial-gradient(383.23px at 68.61% 55.1%, #5761d7 0%, #24126a 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+}
+.img-thumb {
+    width: 3em;
+    height: 3em;
+}

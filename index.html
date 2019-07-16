@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <title>StartNG</title>
+  </head>
+  <body>
+    <div class="container-fluid page-wrapper">
+      <div class="row content">
+        <div class="col-6 bg-info text-white test p-5">
+          <span><img src="/img/start.png" alt="startng" class="img-thumb"> <h5 class="d-inline font-weight-bold">Start</h5></span>
+          <div class="mt-4">
+              <h2>HNG 6.0 Pre-Internship </h2>
+              <small>HNG Internship 6.0 offers the best on hands practice <br> in the world of programming. Join the pre-internship</small>
+          </div>
+        </div>
+        <div class="col-6 p-5">
+          <h5 class="font-weight-bold">Join HNG 6.0 Pre-Internship</h5>
+          <form action="" class="p-0 needs-validation font-weight-bold mt-4">
+            <div class="form-group">
+              <label for="inputName">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <div class="col-8 my-1">
+                <label for="inputPhoneNumber">Phone Number</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="form-group">
+                      <label for="inputCountryCode" class="sr-only"> </label>
+                      <select id="inputCountryCode" class="form-control">
+                        <option selected>+234</option>
+                        <option>..</option>
+                        <option>..</option>
+                      </select>
+                    </div>
+                  </div>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="inputPhoneNumber"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputTrack">Learning Track</label>
+              <select id="inputTrack" class="form-control" required>
+                <option selected hidden value="">Choose...</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inputExperience">Experience</label>
+              <select id="inputExperience" class="form-control" required>
+                <option selected hidden value="">Choose...</option>
+                <option>Beginner</option>
+                <option>Junior</option>
+                <option>Intermidate</option>
+                <option>Senior</option>
+              </select>
+            </div>
+            <button type="submit" class="btn bg-main text-white w-100">
+              Join Now!
+            </button>
+          </form>
+        </div>
+      </div>
+      <footer class="d-flex justify-content-center align-items-center text-main">
+          &copy 2019 HNG internship . All Rights Reserved.
+      </footer>
+    </div>
+  </body>
+</html>
