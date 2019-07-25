@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="HNG Internship 6.0 offers the best on hands practice in the world of programming. Join the pre-internship">
+    <meta name="keywords" content="hng, start, internship, beginner, developer" />
+    <meta property="og:title" content="StartNG" />
+    <meta property="og:image" content="https://res.cloudinary.com/jeffogah/image/upload/v1564071989/Start_Default.svg" />
+    <meta property="og:description" content="HNG Internship 6.0 offers the best on hands practice in the world of programming. Join the pre-internship" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -33,7 +38,7 @@
         </div>
         <div class="col-sm-12 col-lg-6  px-4 pt-5">
           <h5 class="font-weight-bold">Join HNG 6.0 Pre-Internship</h5>
-          <form action="" class="p-0 needs-validation font-weight-bold mt-4">
+          <form action="" method="POST" class="p-0 font-weight-bold mt-4">
             <div class="form-group mt-4">
               <label for="inputName">Full Name</label>
               <input
@@ -64,26 +69,40 @@
                 required
               />
             </div>
-            <div class="form-group mt-2">
+            <div class="form-group mt-4">
               <label for="inputTrack">Learning Track</label>
               <select id="inputTrack" class="form-control" required>
                 <option selected hidden value="">Choose...</option>
                 <option value="Frontend">Frontend</option>
                 <option value="Backend">Backend</option>
+                <option value="Digital Marketing">Digital Marketing</option>
               </select>
             </div>
-            <div class="form-group mt-4">
-              <label for="inputLocation">Location</label>
-              <select id="inputLocation" class="form-control" required>
-                <option selected hidden value=""
-                  >Choose location closest to you</option
-                >
-                <option>Lagos</option>
-                <option>Uyo</option>
-                <option>Kaduna</option>
-              </select>
+            <div class="form-row">
+              <div class="form-group col mt-3">
+                <label for="inputLocation">Location</label>
+                <select id="inputLocation" class="form-control" required onclick="getLocation()">
+                  <option selected hidden value=""
+                    >Choose location closest to you</option
+                  >
+                  <option>Lagos</option>
+                  <option>Uyo</option>
+                  <option>Kaduna</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group col mt-4 d-none" id="locationText">
+                <label for="inputOtherLocation"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputOtherLocation"
+                  placeholder="Enter your city"
+                  required
+                />
+              </div>
             </div>
-            <button type="submit" class="btn bg-main text-white w-100 mt-4">
+            <button type="submit" value="Submit" class="btn bg-main text-white w-100 mt-4">
               Join Now!
             </button>
           </form>
@@ -93,5 +112,6 @@
         &copy 2019 HNG internship . All Rights Reserved.
       </div>
     </div>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
