@@ -97,8 +97,7 @@
                   type="text"
                   class="form-control"
                   id="inputOtherLocation"
-                  placeholder="Enter your city"
-                  required
+                  placeholder="Enter your city"                  
                 />
               </div>
             </div>
