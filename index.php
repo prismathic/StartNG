@@ -10,6 +10,9 @@
     <meta property="og:title" content="StartNG" />
     <meta property="og:image" content="https://res.cloudinary.com/jeffogah/image/upload/v1564073433/Start_Default.png" />
     <meta property="og:description" content="HNG Internship 6.0 offers the best on hands practice in the world of programming. Join the pre-internship" />
+    <title>StartNG</title>
+
+    <!-- CSS and JS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,7 +20,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
-    <title>StartNG</title>
+    <script src="scripts/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <div class="container-fluid page-wrapper">
@@ -40,12 +47,19 @@
         <div class="col-sm-12 col-lg-6  px-4 pt-5">
           <h5 class="font-weight-bold">Join HNG 6.0 Pre-Internship</h5>
           <?php if(isset($_SESSION['submit']) && $_SESSION['submit'] == "done"){  ?>
-          <p>
-          <strong>Success!! </strong><br />
-            You will receive an email containing instructions.<br />
-            Follow us on twitter to get updated news <a href="https://twitter.com/hnginternship"><img src="https://www.itsnicethat.com/system/files/062012/4fd07cea5c3e3c0d810000db/images_slice_large/Twitternew.jpg" width="5%" /></a>
-            
-          </p>
+                  <!-- Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="false">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                  <h4 class="text-center font-weight-bold">Success!! </h4>
+                  <span>You will receive an email containing instructions.</br>
+                  Follow us on twitter to get updated news <a href="https://twitter.com/hnginternship"><img src="https://www.itsnicethat.com/system/files/062012/4fd07cea5c3e3c0d810000db/images_slice_large/Twitternew.jpg" width="10%" /></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>$('#successModal').modal('show')</script>
           <?php }; 
         
           unset($_SESSION['submit']); 
@@ -128,6 +142,5 @@
         &copy 2019 HNG internship . All Rights Reserved.
       </div>
     </div>
-    <script src="scripts/index.js"></script>
   </body>
 </html>
