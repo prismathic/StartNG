@@ -47,6 +47,7 @@
                 id="inputName"
                 placeholder="Enter your full name"
                 required
+                name="fullName"
               />
             </div>
             <div class="form-group mt-4">
@@ -57,6 +58,7 @@
                 id="inputEmail"
                 placeholder="you@example.com"
                 required
+                name="email"
               />
             </div>
             <div class="form-group mt-4">
@@ -67,11 +69,12 @@
                 id="inputPhoneNumber"
                 placeholder="+2340800000000"
                 required
+                name="phone"
               />
             </div>
             <div class="form-group mt-4">
               <label for="inputTrack">Learning Track</label>
-              <select id="inputTrack" class="form-control" required>
+              <select id="inputTrack" name="track" class="form-control" required>
                 <option selected hidden value="">Choose...</option>
                 <option value="Frontend">Frontend</option>
                 <option value="Backend">Backend</option>
@@ -81,7 +84,7 @@
             <div class="form-row">
               <div class="form-group col mt-3">
                 <label for="inputLocation">Location</label>
-                <select id="inputLocation" class="form-control" required onclick="getLocation()">
+                <select name="locationSelect" id="inputLocation" class="form-control" required onclick="getLocation()">
                   <option selected hidden value=""
                     >Choose location closest to you</option
                   >
@@ -97,7 +100,8 @@
                   type="text"
                   class="form-control"
                   id="inputOtherLocation"
-                  placeholder="Enter your city"                  
+                  placeholder="Enter your city" 
+                  name="locationOthers"                 
                 />
               </div>
             </div>
