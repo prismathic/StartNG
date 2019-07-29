@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,6 +39,17 @@
         </div>
         <div class="col-sm-12 col-lg-6  px-4 pt-5">
           <h5 class="font-weight-bold">Join HNG 6.0 Pre-Internship</h5>
+          <?php if(isset($_SESSION['submit']) && $_SESSION['submit'] == "done"){  ?>
+          <p>
+          <strong>Success!! </strong><br />
+            You will receive an email containing instructions.<br />
+            Follow us on twitter to get updated news <a href="https://twitter.com/hnginternship"><img src="https://www.itsnicethat.com/system/files/062012/4fd07cea5c3e3c0d810000db/images_slice_large/Twitternew.jpg" width="5%" /></a>
+            
+          </p>
+          <?php }; 
+        
+          unset($_SESSION['submit']); 
+          session_destroy(); ?>
           <form action="process.php" method="POST" class="p-0 font-weight-bold mt-4">
             <div class="form-group mt-4">
               <label for="inputName">Full Name</label>
