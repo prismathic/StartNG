@@ -105,6 +105,8 @@
                 <option value="Frontend">Frontend</option>
                 <option value="Backend">Backend</option>
                 <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Mobile Development">Mobile Development</option>
+                <option value="Machine Learning">Machine Learning</option>
                 <option value="no idea">Not sure yet</option>
               </select>
             </div>
