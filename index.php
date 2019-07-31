@@ -53,7 +53,7 @@
             <div class="modal-content">
               <div class="modal-body text-center">
                   <h4 class="text-center font-weight-bold">Success!! </h4>
-                  <span>You will receive an email containing instructions.</br>
+                  <span>You will receive an email containing instructions when the program is about to begin.</br>
                   Follow us on twitter to get updated news <a href="https://twitter.com/hnginternship"><img src="https://www.itsnicethat.com/system/files/062012/4fd07cea5c3e3c0d810000db/images_slice_large/Twitternew.jpg" width="10%" /></a></span>
               </div>
             </div>
